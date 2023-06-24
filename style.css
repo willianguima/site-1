@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  h1{
+   text-align: center;
+  }
+
+  .header {
+    background-image: url('./img/FUNDO.jpg');
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .menu {
+    text-align: center;
+    margin: 20px 0;
+    text-decoration: none;
+  }
+
+  .menu a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #020202;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+
+  .card {
+    width: 300px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .card h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .card p {
+    color: #888;
+  }
+  img{
+    width: 80%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: visible;
+  }
+  .footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+ 
+  @media (max-width: 600px) {
+    .menu a {
+      display: block;
+      margin: 10px;
+    }
+    .footer{
+        background-color: #000000;
+        color: #fff;
+        text-align: center;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+  

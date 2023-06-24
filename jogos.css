@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  background-image: url('./img/FUNDO.jpg');
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.menu a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #020202;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.select-games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.select-games select {
+  width: 200px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  appearance: none;
+  cursor: pointer;
+}
+
+.select-games select:focus {
+  outline: none;
+}
+
+.select-games::before {
+  content: '\25BC';
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #fff;
+  pointer-events: none;
+}
+
+.select-games::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid #fff;
+  pointer-events: none;
+}
+
+
+.select-games:hover::before {
+  color: #ccc;
+}
+
+.select-games:hover::after {
+  border-top-color: #ccc;
+}
+
+@media (max-width: 600px) {
+  .menu a {
+    display: block;
+    margin: 10px;
+  }
+
+  .footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}

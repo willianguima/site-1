@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .background {
+    background-image: url(./img/VALOR1.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: moveBackground 20s linear infinite;
+    opacity: 2.7;
+  }
+  
+  h1 {
+    text-align: center;
+    color: white;
+  }
+  
+  .header {
+    background-image: url('./img/FUNDO.jpg');
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .menu {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #020202;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  
+  .card {
+    width: 300px;
+    background-color: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .card a {
+    text-decoration: none;
+    color: #5a0202;
+    font-size: 25px;
+  }
+  
+  img {
+    width: 100%;
+    max-width: 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    pointer-events: visible;
+    border-radius: 5px;
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -200% 0;
+    }
+  }
+  
+  .content {
+    padding: 20px;
+    z-index: 1;
+  }
+  
+  @media (max-width: 600px) {
+    .menu a {
+      display: block;
+      margin: 10px;
+    }
+  
+    .card {
+      width: calc(100% - 40px);
+      max-width: 100%;
+      margin: 20px;
+      padding: 10px;
+    }
+  
+    .container {
+      justify-content: center;
+      overflow-y: scroll;
+      max-height: calc(100vh - 400px);
+    }
+  
+    .background {
+      display: none;
+    }
+  
+    .header {
+      background-size: cover;
+    }
+  
+    .card h3 {
+      text-align: center;
+    }
+  
+    .card img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  
+  
